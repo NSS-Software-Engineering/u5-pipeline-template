@@ -58,7 +58,7 @@
             "default": {
                 "keyPath": [
                     {
-                        "valueOf": "testing_stage_name"
+                        "valueOf": "stage_name"
                     },
                     "pipeline_execution_role"
                 ]
@@ -72,7 +72,7 @@
             "default": {
                 "keyPath": [
                     {
-                        "valueOf": "testing_stage_name"
+                        "valueOf": "stage_name"
                     },
                     "cloudformation_execution_role"
                 ]
@@ -86,7 +86,7 @@
             "default": {
                 "keyPath": [
                     {
-                        "valueOf": "testing_stage_name"
+                        "valueOf": "stage_name"
                     },
                     "artifacts_bucket"
                 ]
