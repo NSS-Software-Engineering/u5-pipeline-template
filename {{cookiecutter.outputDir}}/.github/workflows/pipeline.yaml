@@ -118,7 +118,7 @@ env:
           name: packaged-prod.yaml
           path: packaged-prod.yaml
 
-  deploy-to-test:
+  deploy-to-aws:
     if: github.ref == 'refs/heads/main'
     needs: [build-and-package-main]
     runs-on: ubuntu-latest
