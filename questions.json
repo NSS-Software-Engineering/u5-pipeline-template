@@ -107,6 +107,12 @@
             }
         },
         {
+            "key": "u5_api_resource_id",
+            "question": "What is the API Resource ID?",
+            "isRequired": true,
+            "default": "TODO-REPLACE"
+        },
+        {
             "key": "message_testing_stage_configured",
             "question": "Configured successfully.\n",
             "kind": "info"

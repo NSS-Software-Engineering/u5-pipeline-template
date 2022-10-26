@@ -9,5 +9,6 @@
     "cloudformation_execution_role": "",
     "artifacts_bucket": "",
     "image_repository": "",
-    "region": "us-east-2"
+    "region": "us-east-2",
+    "u5_api_resource_id": "TODO-REPLACE"
   }
