@@ -27,7 +27,7 @@ env:
   ARTIFACTS_BUCKET: {{cookiecutter.artifacts_bucket}}
   REGION: {{cookiecutter.region}}
 
- jobs:
+jobs:
 
   build-feature:
     # this stage is triggered only for feature branches (feature*),
