@@ -10,5 +10,9 @@
     "artifacts_bucket": "",
     "image_repository": "",
     "region": "us-east-2",
-    "u5_api_resource_id": "TODO-REPLACE"
-  }
+
+    "api_base_url": "https://TODO-REPLACE.execute-api.us-east-2.amazonaws.com/Prod/",
+    "cognito_domain": "TODO-REPLACE.auth.us-east-2.amazoncognito.com",
+    "cognito_redirect_signin": "https://TODO-REPLACE.cloudfront.net",
+    "cognito_redirect_signout": "https://TODO-REPLACE.cloudfront.net"
+}

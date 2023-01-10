@@ -8,8 +8,14 @@ on:
 
 env:
 
-  # STUDENTS: Set this to the current API Gateway Resource ID
-  U5_API_RESOURCE_ID: {{cookiecutter.u5_api_resource_id}}
+  # STUDENTS: Set these environment variables 
+  API_BASE_URL: {{cookiecutter.api_base_url}}
+  COGNITO_DOMAIN: {{cookiecutter.cognito_domain}}
+  COGNITO_REDIRECT_SIGNIN: {{cookiecutter.cognito_redirect_signin}}
+  COGNITO_REDIRECT_SIGNOUT: {{cookiecutter.cognito_redirect_signout}}
+
+  COGNITO_USER_POOL_ID: ${{ "{{" }} secrets.COGNITO_USER_POOL_ID {{ "}}" }}
+  COGNITO_USER_POOL_CLIENT_ID: ${{ "{{" }} secrets.COGNITO_USER_POOL_CLIENT_ID {{ "}}" }}
 
   GH_PACKAGE_REG_READ_USER: ${{ "{{" }} secrets.GH_PACKAGE_REG_READ_USER {{ "}}" }}
   GH_PACKAGE_REG_READ_PASS: ${{ "{{" }} secrets.GH_PACKAGE_REG_READ_PASS {{ "}}" }}

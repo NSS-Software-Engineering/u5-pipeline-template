@@ -107,10 +107,28 @@
             }
         },
         {
-            "key": "u5_api_resource_id",
-            "question": "What is the API Resource ID?",
+            "key": "api_base_url",
+            "question": "What is the API Gateway URL?",
             "isRequired": true,
-            "default": "TODO-REPLACE"
+            "default": "https://TODO-REPLACE.execute-api.us-east-2.amazonaws.com/Prod/"
+        },
+        {
+            "key": "cognito_domain",
+            "question": "What is the Cognito Domain?",
+            "isRequired": true,
+            "default": "TODO-REPLACE.auth.us-east-2.amazoncognito.com"
+        },
+        {
+            "key": "cognito_redirect_signin",
+            "question": "What is the CloudFront Sign In URL?",
+            "isRequired": true,
+            "default":  "https://TODO-REPLACE.cloudfront.net"
+        },
+        {
+            "key": "cognito_redirect_signin",
+            "question": "What is the CloudFront Sign Out URL?",
+            "isRequired": true,
+            "default":  "https://TODO-REPLACE.cloudfront.net"
         },
         {
             "key": "message_testing_stage_configured",
