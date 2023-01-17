@@ -110,6 +110,21 @@ jobs:
         working-directory: web
         run: npm install
 
+      - name: Create .env file for npm build
+        working-directory: web
+        run: |
+          touch .env
+
+          echo API_BASE_URL=\"$API_BASE_URL\" >> .env
+
+          echo COGNITO_DOMAIN=\"$COGNITO_DOMAIN\" >> .env
+
+          echo COGNITO_USER_POOL_ID=\"$COGNITO_USER_POOL_ID\" >> .env
+          echo COGNITO_USER_POOL_CLIENT_ID=\"$COGNITO_USER_POOL_CLIENT_ID\" >> .env
+
+          echo COGNITO_REDIRECT_SIGNIN=\"$COGNITO_REDIRECT_SIGNIN\" >> .env
+          echo COGNITO_REDIRECT_SIGNOUT=\"$COGNITO_REDIRECT_SIGNOUT\" >> .env
+
       - name: Build NPM static resources
         working-directory: web
         run: npm run build
