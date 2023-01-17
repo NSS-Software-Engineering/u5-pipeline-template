@@ -8,8 +8,14 @@ on:
 
 env:
 
-  # STUDENTS: Set this to the current API Gateway Resource ID
-  U5_API_RESOURCE_ID: {{cookiecutter.u5_api_resource_id}}
+  # STUDENTS: Set these environment variables 
+  API_BASE_URL: {{cookiecutter.api_base_url}}
+  COGNITO_DOMAIN: {{cookiecutter.cognito_domain}}
+  COGNITO_REDIRECT_SIGNIN: {{cookiecutter.cognito_redirect_signin}}
+  COGNITO_REDIRECT_SIGNOUT: {{cookiecutter.cognito_redirect_signout}}
+
+  COGNITO_USER_POOL_ID: ${{ "{{" }} secrets.COGNITO_USER_POOL_ID {{ "}}" }}
+  COGNITO_USER_POOL_CLIENT_ID: ${{ "{{" }} secrets.COGNITO_USER_POOL_CLIENT_ID {{ "}}" }}
 
   GH_PACKAGE_REG_READ_USER: ${{ "{{" }} secrets.GH_PACKAGE_REG_READ_USER {{ "}}" }}
   GH_PACKAGE_REG_READ_PASS: ${{ "{{" }} secrets.GH_PACKAGE_REG_READ_PASS {{ "}}" }}
@@ -103,6 +109,21 @@ jobs:
       - name: Install NPM dependencies
         working-directory: web
         run: npm install
+
+      - name: Create .env file for npm build
+        working-directory: web
+        run: |
+          touch .env
+
+          echo API_BASE_URL=\"$API_BASE_URL\" >> .env
+
+          echo COGNITO_DOMAIN=\"$COGNITO_DOMAIN\" >> .env
+
+          echo COGNITO_USER_POOL_ID=\"$COGNITO_USER_POOL_ID\" >> .env
+          echo COGNITO_USER_POOL_CLIENT_ID=\"$COGNITO_USER_POOL_CLIENT_ID\" >> .env
+
+          echo COGNITO_REDIRECT_SIGNIN=\"$COGNITO_REDIRECT_SIGNIN\" >> .env
+          echo COGNITO_REDIRECT_SIGNOUT=\"$COGNITO_REDIRECT_SIGNOUT\" >> .env
 
       - name: Build NPM static resources
         working-directory: web

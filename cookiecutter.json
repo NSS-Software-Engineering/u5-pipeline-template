@@ -10,5 +10,9 @@
     "artifacts_bucket": "",
     "image_repository": "",
     "region": "us-east-2",
-    "u5_api_resource_id": "TODO-REPLACE"
-  }
+
+    "api_base_url": "TODO-REPLACE",
+    "cognito_domain": "TODO-REPLACE",
+    "cognito_redirect_signin": "TODO-REPLACE",
+    "cognito_redirect_signout": "TODO-REPLACE"
+}
