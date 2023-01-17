@@ -11,8 +11,8 @@
     "image_repository": "",
     "region": "us-east-2",
 
-    "api_base_url": "https://TODO-REPLACE.execute-api.us-east-2.amazonaws.com/Prod/",
-    "cognito_domain": "TODO-REPLACE.auth.us-east-2.amazoncognito.com",
-    "cognito_redirect_signin": "https://TODO-REPLACE.cloudfront.net",
-    "cognito_redirect_signout": "https://TODO-REPLACE.cloudfront.net"
+    "api_base_url": "TODO-REPLACE",
+    "cognito_domain": "TODO-REPLACE",
+    "cognito_redirect_signin": "TODO-REPLACE",
+    "cognito_redirect_signout": "TODO-REPLACE"
 }
