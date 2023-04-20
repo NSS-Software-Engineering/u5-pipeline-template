@@ -114,7 +114,7 @@
         },
         {
             "key": "cognito_domain",
-            "question": "What is the Cognito Domain (COGNITO_DOMAIN)?",
+            "question": "What is the Teams Cognito Domain (COGNITO_DOMAIN)?",
             "isRequired": true,
             "default": "TODO-REPLACE"
         },
