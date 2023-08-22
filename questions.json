@@ -6,26 +6,6 @@
             "kind": "info"
         },
         {
-            "key": "pipeline_user_aws_access_key_id_variable_name",
-            "question": "What is the GitHub secret name for pipeline user account access key ID?",
-            "default": "AWS_ACCESS_KEY_ID"
-        },
-        {
-            "key": "pipeline_user_aws_secret_access_key_variable_name",
-            "question": "What is the GitHub Secret name for pipeline user account access key secret?",
-            "default": "AWS_SECRET_ACCESS_KEY"
-        },
-        {
-            "key": "main_git_branch",
-            "question": "What is the git branch used for production deployments?",
-            "default": "main"
-        },
-        {
-            "key": "sam_template",
-            "question": "What is the template file path?",
-            "default": "template.yaml"
-        },
-        {
             "key": "message_stage_name",
             "question": "We use the stage configuration name to automatically retrieve the bootstrapped resources created when you ran `sam pipeline bootstrap`.\n",
             "kind": "info"

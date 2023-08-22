@@ -2,8 +2,6 @@
     "outputDir": "aws-sam-pipeline",
     "pipeline_user_aws_access_key_id_variable_name": "AWS_ACCESS_KEY_ID",
     "pipeline_user_aws_secret_access_key_variable_name": "AWS_SECRET_ACCESS_KEY",
-    "main_git_branch": "",
-    "sam_template": "",
     "stack_name": "",
     "pipeline_execution_role": "",
     "cloudformation_execution_role": "",
